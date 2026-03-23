@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KanaHost Legal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { kana: { coral: '#E8613C', dark: '#1C1C1C', warm: '#FAF8F5' } } } }
+    }
+  </script>
+  <style>
+    body {
+      background:
+        radial-gradient(circle at top, rgba(232,97,60,0.18), transparent 30%),
+        linear-gradient(180deg, #0d0d0d 0%, #141414 100%);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-white antialiased">
+  <main class="mx-auto flex min-h-screen max-w-5xl items-center px-6 py-16">
+    <section class="w-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl md:p-12">
+      <div class="inline-flex rounded-full border border-kana-coral/30 bg-kana-coral/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-kana-coral">KanaHost Legal</div>
+      <h1 class="mt-5 text-4xl font-semibold tracking-tight md:text-6xl">Legal pages for KanaHost</h1>
+      <p class="mt-4 max-w-2xl text-base leading-8 text-white/70 md:text-lg">Plain-English documents with detailed legal text underneath. Designed for fast reading on mobile and desktop.</p>
+      <div class="mt-10 grid gap-4 md:grid-cols-2">
+        <a href="./privacy.html" class="rounded-[1.5rem] border border-white/10 bg-black/30 p-6 transition hover:border-kana-coral/40 hover:bg-black/40">
+          <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Document 01</p>
+          <h2 class="mt-2 text-2xl font-semibold">Privacy Policy</h2>
+          <p class="mt-3 text-sm leading-7 text-white/70">What we collect, what we do not collect, where data lives, cookies, subprocessors, GDPR rights, and deletion/export options.</p>
+        </a>
+        <a href="./terms.html" class="rounded-[1.5rem] border border-white/10 bg-black/30 p-6 transition hover:border-kana-coral/40 hover:bg-black/40">
+          <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Document 02</p>
+          <h2 class="mt-2 text-2xl font-semibold">Terms of Service</h2>
+          <p class="mt-3 text-sm leading-7 text-white/70">Service description, acceptable use, billing, availability, data ownership, termination, liability limits, and Delaware law.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KanaHost Privacy Policy</title>
+  <meta name="description" content="KanaHost Privacy Policy — plain-English privacy details for managed AI assistant hosting by ContextX Inc." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            kana: {
+              coral: '#E8613C',
+              dark: '#1C1C1C',
+              warm: '#FAF8F5'
+            }
+          },
+          boxShadow: {
+            glow: '0 20px 80px rgba(232, 97, 60, 0.22)',
+            panel: '0 20px 60px rgba(0,0,0,0.18)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(232,97,60,0.16), transparent 30%),
+        radial-gradient(circle at top right, rgba(250,248,245,0.08), transparent 28%),
+        linear-gradient(180deg, #0d0d0d 0%, #141414 40%, #101010 100%);
+    }
+    .grid-overlay {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 34px 34px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.85), transparent);
+    }
+    details > summary {
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="text-white antialiased selection:bg-kana-coral/30 selection:text-white">
+  <div class="fixed inset-0 grid-overlay pointer-events-none"></div>
+
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="./index.html" class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-kana-coral text-lg font-semibold text-white shadow-glow">K</div>
+        <div>
+          <div class="text-sm uppercase tracking-[0.32em] text-white/50">KanaHost</div>
+          <div class="text-xs text-white/70">Privacy Policy</div>
+        </div>
+      </a>
+      <nav class="hidden items-center gap-3 md:flex">
+        <a href="./terms.html" class="rounded-full border border-white/10 px-4 py-2 text-sm text-white/70 transition hover:border-white/20 hover:text-white">Terms</a>
+        <a href="#policy" class="rounded-full bg-kana-coral px-4 py-2 text-sm font-medium text-white transition hover:opacity-90">Read policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="relative mx-auto max-w-7xl px-6 py-10 md:py-16">
+    <section class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-panel backdrop-blur-xl">
+      <div class="absolute inset-0 bg-gradient-to-br from-kana-coral/20 via-transparent to-white/5"></div>
+      <div class="relative grid gap-10 px-6 py-8 md:px-10 md:py-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+        <div>
+          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-kana-coral/30 bg-kana-coral/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-kana-coral">
+            Last updated · March 23, 2026
+          </div>
+          <h1 class="max-w-3xl text-4xl font-semibold tracking-tight text-white md:text-6xl">Privacy Policy</h1>
+          <p class="mt-5 max-w-2xl text-base leading-8 text-white/70 md:text-lg">
+            KanaHost is a managed AI assistant hosting platform operated by <span class="font-medium text-white">ContextX Inc</span>, a Delaware company. This page explains what data we handle, what we do <span class="font-medium text-kana-coral">not</span> do, and how we keep your AI assistant private on your own dedicated infrastructure.
+          </p>
+
+          <div class="mt-8 rounded-[1.75rem] border border-white/10 bg-black/35 p-5 md:p-7" aria-labelledby="bluf-title">
+            <div class="mb-4 flex items-center gap-3">
+              <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-kana-coral text-white">✓</div>
+              <div>
+                <h2 id="bluf-title" class="text-xl font-semibold text-white">Bottom line up front</h2>
+                <p class="text-sm text-white/55">The fast version, in plain English.</p>
+              </div>
+            </div>
+            <ul class="space-y-3 text-sm leading-7 text-white/80 md:text-base">
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>Your assistant runs on a dedicated server for your account, not on a shared customer machine.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>We do <strong class="text-white">not</strong> train AI models on your data, and we do not routinely read your conversations.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>Your infrastructure is hosted primarily at Hetzner in Germany, with traffic protected by Tailscale and Cloudflare.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>If you choose to use outside AI models, requests may go to Anthropic, OpenAI, or Google so your assistant can answer you.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>We only use essential cookies for sign-in through Clerk. We do not run ad trackers.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>You can ask for a copy of your data, ask us to delete it, and use GDPR rights where they apply.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="space-y-4">
+          <div class="rounded-[1.75rem] border border-white/10 bg-black/35 p-6">
+            <p class="text-xs uppercase tracking-[0.28em] text-white/45">Quick facts</p>
+            <dl class="mt-5 space-y-4 text-sm">
+              <div class="flex items-start justify-between gap-4 border-b border-white/8 pb-4">
+                <dt class="text-white/55">Company</dt>
+                <dd class="text-right font-medium text-white">ContextX Inc</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4 border-b border-white/8 pb-4">
+                <dt class="text-white/55">Jurisdiction</dt>
+                <dd class="text-right font-medium text-white">Delaware, USA</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4 border-b border-white/8 pb-4">
+                <dt class="text-white/55">Hosting region</dt>
+                <dd class="text-right font-medium text-white">Hetzner, Germany (EU)</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4 border-b border-white/8 pb-4">
+                <dt class="text-white/55">Network security</dt>
+                <dd class="text-right font-medium text-white">Tailscale + Cloudflare</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4">
+                <dt class="text-white/55">Privacy contact</dt>
+                <dd class="text-right font-medium text-white"><a class="text-kana-coral hover:text-orange-300" href="mailto:support@kana.host">support@kana.host</a></dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="rounded-[1.75rem] border border-kana-coral/25 bg-kana-coral/10 p-6">
+            <p class="text-sm font-medium text-kana-coral">What we don't do</p>
+            <ul class="mt-4 space-y-3 text-sm leading-7 text-white/80">
+              <li>• No selling your data</li>
+              <li>• No ad-tech tracking pixels</li>
+              <li>• No model training on your conversations</li>
+              <li>• No routine human review of your chats</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="policy" class="mt-8 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+      <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl lg:sticky lg:top-28 lg:h-fit">
+        <p class="text-xs uppercase tracking-[0.24em] text-white/45">Contents</p>
+        <ol class="mt-4 space-y-3 text-sm text-white/75">
+          <li><a href="#collect" class="transition hover:text-kana-coral">1. What we collect</a></li>
+          <li><a href="#dont-collect" class="transition hover:text-kana-coral">2. What we do not collect</a></li>
+          <li><a href="#use" class="transition hover:text-kana-coral">3. How we use information</a></li>
+          <li><a href="#security" class="transition hover:text-kana-coral">4. Hosting, storage, and security</a></li>
+          <li><a href="#third-parties" class="transition hover:text-kana-coral">5. Third parties and subprocessors</a></li>
+          <li><a href="#cookies" class="transition hover:text-kana-coral">6. Cookies</a></li>
+          <li><a href="#gdpr" class="transition hover:text-kana-coral">7. GDPR and your rights</a></li>
+          <li><a href="#retention" class="transition hover:text-kana-coral">8. Retention, export, and deletion</a></li>
+          <li><a href="#changes" class="transition hover:text-kana-coral">9. Changes and contact</a></li>
+        </ol>
+      </div>
+
+      <div class="space-y-4">
+        <details id="collect" open class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 1</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">What we collect</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>KanaHost collects only the information reasonably needed to create, secure, operate, and support your account.</p>
+            <p>This may include:</p>
+            <ul class="space-y-2 pl-5 text-white/75">
+              <li class="list-disc">Account information such as your name, email address, billing contact details, and account identifiers.</li>
+              <li class="list-disc">Service configuration information, such as the integrations, model providers, domains, or channels you choose to connect.</li>
+              <li class="list-disc">Operational metadata needed to run the service, such as server health, uptime events, crash logs, deployment events, API usage counts, and authentication events.</li>
+              <li class="list-disc">Support information you send us when you contact support or ask us to investigate a problem.</li>
+            </ul>
+            <p>If your assistant processes emails, calendar entries, documents, tasks, or conversations, that content is handled on your dedicated environment so the service can work for you. We treat that content as your data.</p>
+          </div>
+        </details>
+
+        <details id="dont-collect" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 2</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">What we do not collect</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>We built KanaHost around the idea that your assistant should belong to you, not become training fuel for someone else.</p>
+            <ul class="space-y-2 pl-5 text-white/75">
+              <li class="list-disc">We do not sell personal information.</li>
+              <li class="list-disc">We do not use your conversations, documents, or memory to train KanaHost models.</li>
+              <li class="list-disc">We do not routinely read or monitor your assistant conversations.</li>
+              <li class="list-disc">We do not run advertising trackers across the service.</li>
+            </ul>
+            <p>There are only narrow exceptions: if you explicitly ask us for troubleshooting help and authorize access, if a system-generated error snippet appears in logs, or if we are legally required to respond to a valid legal process.</p>
+          </div>
+        </details>
+
+        <details id="use" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 3</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">How we use information</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>We use information to provide the service you asked for, including to provision servers, secure accounts, operate networking, process payments, answer support requests, and improve reliability.</p>
+            <p>More specifically, we may use information to:</p>
+            <ul class="space-y-2 pl-5 text-white/75">
+              <li class="list-disc">Create and manage your KanaHost account.</li>
+              <li class="list-disc">Deploy and maintain your dedicated AI assistant infrastructure.</li>
+              <li class="list-disc">Authenticate users and prevent fraud or unauthorized access.</li>
+              <li class="list-disc">Send service notices, billing notices, security alerts, and support messages.</li>
+              <li class="list-disc">Monitor uptime, investigate incidents, and keep the platform stable.</li>
+            </ul>
+            <p>We do not use your private assistant content for targeted advertising or generalized model training.</p>
+          </div>
+        </details>
+
+        <details id="security" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 4</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Hosting, storage, and security</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>Customer infrastructure is primarily hosted on Hetzner servers located in Germany. We selected this environment to support strong operational control and European hosting options.</p>
+            <p>Your assistant runs on a dedicated server environment assigned to your account. Data is intended to stay within that environment except when it must be transmitted to a service you choose to connect, such as an AI provider, email provider, calendar provider, or identity provider.</p>
+            <p>We use multiple layers of protection, including:</p>
+            <ul class="space-y-2 pl-5 text-white/75">
+              <li class="list-disc">Encrypted network access using Tailscale for private connectivity.</li>
+              <li class="list-disc">Cloudflare services for edge protection, DNS, and traffic management where applicable.</li>
+              <li class="list-disc">Encryption in transit using HTTPS/TLS.</li>
+              <li class="list-disc">Reasonable administrative, technical, and organizational controls to protect accounts and infrastructure.</li>
+            </ul>
+            <p>No system can be promised as perfectly secure, but we design KanaHost to minimize exposure and keep customer data isolated by default.</p>
+          </div>
+        </details>
+
+        <details id="third-parties" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 5</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Third parties and subprocessors</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>We use a limited set of third-party providers to operate KanaHost. Depending on your setup, your data may be processed by:</p>
+            <ul class="space-y-2 pl-5 text-white/75">
+              <li class="list-disc"><strong class="text-white">Hetzner</strong> for core server infrastructure in Germany.</li>
+              <li class="list-disc"><strong class="text-white">Tailscale</strong> for encrypted private networking.</li>
+              <li class="list-disc"><strong class="text-white">Cloudflare</strong> for DNS, edge security, and traffic routing.</li>
+              <li class="list-disc"><strong class="text-white">Clerk</strong> for authentication and session management.</li>
+              <li class="list-disc"><strong class="text-white">Anthropic, OpenAI, and Google</strong> when you or your configuration choose those model providers for AI responses or related processing.</li>
+            </ul>
+            <p>These providers act as independent service providers or subprocessors. Their handling of data is governed by their own terms and privacy commitments. We aim to share only the data required for them to perform the requested service.</p>
+          </div>
+        </details>
+
+        <details id="cookies" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 6</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Cookies</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>KanaHost uses essential authentication cookies through Clerk so you can sign in securely and keep your session active.</p>
+            <p>We do not use ad-tech cookies for behavioral advertising. We do not use cross-site marketing trackers as part of the core service.</p>
+            <p>If we later add optional analytics or preference cookies, we will update this policy and, where required, ask for the appropriate consent.</p>
+          </div>
+        </details>
+
+        <details id="gdpr" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 7</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">GDPR and your rights</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>If the GDPR or similar privacy laws apply to you, you may have rights that include access, correction, deletion, restriction, objection, portability, and the right to lodge a complaint with a supervisory authority.</p>
+            <p>We generally process account information to perform our contract with you, comply with legal obligations, protect the service, and pursue legitimate interests such as security, fraud prevention, and reliability.</p>
+            <p>To exercise privacy rights, email <a href="mailto:support@kana.host" class="text-kana-coral hover:text-orange-300">support@kana.host</a>. We may need to verify your identity before acting on a request.</p>
+            <p>Where KanaHost acts as a processor for customer content, the customer remains responsible for the lawfulness of the content they place into the system and for handling end-user requests where required.</p>
+          </div>
+        </details>
+
+        <details id="retention" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 8</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Retention, export, and deletion</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>We keep account and billing records for as long as reasonably needed to operate the service, comply with law, resolve disputes, and enforce agreements.</p>
+            <p>Customer content generally remains in your dedicated environment until you delete it, export it, or your service ends, subject to limited backup and legal-retention needs.</p>
+            <p>You may request:</p>
+            <ul class="space-y-2 pl-5 text-white/75">
+              <li class="list-disc">A copy of data we maintain about your account.</li>
+              <li class="list-disc">Deletion of your account and associated hosted environment, subject to legal or security retention requirements.</li>
+              <li class="list-disc">Reasonable assistance exporting customer data where feasible.</li>
+            </ul>
+            <p>Deletion requests can be sent to <a href="mailto:support@kana.host" class="text-kana-coral hover:text-orange-300">support@kana.host</a>.</p>
+          </div>
+        </details>
+
+        <details id="changes" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 9</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Changes and contact</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>We may update this Privacy Policy from time to time to reflect product, operational, legal, or regulatory changes. When we do, we will post the updated version on this page and update the "Last updated" date.</p>
+            <p>If a change is material, we may also provide notice through the service or by email.</p>
+            <p>Questions, requests, or privacy concerns can be sent to <a href="mailto:support@kana.host" class="text-kana-coral hover:text-orange-300">support@kana.host</a>.</p>
+            <p>Mailing entity: <span class="text-white">ContextX Inc, Delaware, USA.</span></p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="mt-8 rounded-[2rem] border border-white/10 bg-gradient-to-r from-kana-coral/18 via-white/5 to-white/5 p-8 md:p-10">
+      <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Need help?</p>
+          <h2 class="mt-2 text-3xl font-semibold text-white">Questions about privacy or deletion?</h2>
+          <p class="mt-3 max-w-2xl text-sm leading-7 text-white/70 md:text-base">Email us and we'll help with access requests, export requests, or account deletion workflows.</p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="mailto:support@kana.host" class="rounded-full bg-kana-coral px-5 py-3 text-sm font-medium text-white transition hover:opacity-90">support@kana.host</a>
+          <a href="./terms.html" class="rounded-full border border-white/15 px-5 py-3 text-sm font-medium text-white/80 transition hover:border-white/30 hover:text-white">View Terms</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 px-6 py-8 text-center text-sm text-white/45">
+    <p>© 2026 ContextX Inc · KanaHost · <a href="https://kana.host" class="text-white/60 hover:text-white">kana.host</a></p>
+  </footer>
+</body>
+</html>

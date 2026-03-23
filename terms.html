@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KanaHost Terms of Service</title>
+  <meta name="description" content="KanaHost Terms of Service — plain-English terms for managed AI assistant hosting by ContextX Inc." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            kana: {
+              coral: '#E8613C',
+              dark: '#1C1C1C',
+              warm: '#FAF8F5'
+            }
+          },
+          boxShadow: {
+            glow: '0 20px 80px rgba(232, 97, 60, 0.22)',
+            panel: '0 20px 60px rgba(0,0,0,0.18)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at top right, rgba(232,97,60,0.16), transparent 28%),
+        radial-gradient(circle at 10% 30%, rgba(250,248,245,0.08), transparent 26%),
+        linear-gradient(180deg, #0d0d0d 0%, #141414 40%, #101010 100%);
+    }
+    .grid-overlay {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 34px 34px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.85), transparent);
+    }
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+  </style>
+</head>
+<body class="text-white antialiased selection:bg-kana-coral/30 selection:text-white">
+  <div class="fixed inset-0 grid-overlay pointer-events-none"></div>
+
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="./index.html" class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-kana-coral text-lg font-semibold text-white shadow-glow">K</div>
+        <div>
+          <div class="text-sm uppercase tracking-[0.32em] text-white/50">KanaHost</div>
+          <div class="text-xs text-white/70">Terms of Service</div>
+        </div>
+      </a>
+      <nav class="hidden items-center gap-3 md:flex">
+        <a href="./privacy.html" class="rounded-full border border-white/10 px-4 py-2 text-sm text-white/70 transition hover:border-white/20 hover:text-white">Privacy</a>
+        <a href="#terms" class="rounded-full bg-kana-coral px-4 py-2 text-sm font-medium text-white transition hover:opacity-90">Read terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="relative mx-auto max-w-7xl px-6 py-10 md:py-16">
+    <section class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-panel backdrop-blur-xl">
+      <div class="absolute inset-0 bg-gradient-to-br from-kana-coral/20 via-transparent to-white/5"></div>
+      <div class="relative grid gap-10 px-6 py-8 md:px-10 md:py-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+        <div>
+          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-kana-coral/30 bg-kana-coral/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-kana-coral">
+            Last updated · March 23, 2026
+          </div>
+          <h1 class="max-w-3xl text-4xl font-semibold tracking-tight text-white md:text-6xl">Terms of Service</h1>
+          <p class="mt-5 max-w-2xl text-base leading-8 text-white/70 md:text-lg">
+            These Terms govern your use of KanaHost, a managed AI assistant hosting platform operated by <span class="font-medium text-white">ContextX Inc</span>, a Delaware company. They explain what the service is, what you can expect from us, and what we need from you to keep the platform safe and reliable.
+          </p>
+
+          <div class="mt-8 rounded-[1.75rem] border border-white/10 bg-black/35 p-5 md:p-7" aria-labelledby="bluf-title">
+            <div class="mb-4 flex items-center gap-3">
+              <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-kana-coral text-white">⚖</div>
+              <div>
+                <h2 id="bluf-title" class="text-xl font-semibold text-white">Bottom line up front</h2>
+                <p class="text-sm text-white/55">The simple version first.</p>
+              </div>
+            </div>
+            <ul class="space-y-3 text-sm leading-7 text-white/80 md:text-base">
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>KanaHost gives you a managed AI assistant on dedicated infrastructure we operate for your account.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>You are responsible for your account, your connected tools, and making sure you use the service legally.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>You keep ownership of your data and content. We only need limited rights to host and process it for you.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>Payments are handled through Stripe, and paid fees are generally non-refundable unless we say otherwise.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>We aim for 99.9% availability, but no online service can promise perfect uptime.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>If something goes seriously wrong, our liability is limited, and Delaware law governs these Terms.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="space-y-4">
+          <div class="rounded-[1.75rem] border border-white/10 bg-black/35 p-6">
+            <p class="text-xs uppercase tracking-[0.28em] text-white/45">Quick facts</p>
+            <dl class="mt-5 space-y-4 text-sm">
+              <div class="flex items-start justify-between gap-4 border-b border-white/8 pb-4">
+                <dt class="text-white/55">Service</dt>
+                <dd class="text-right font-medium text-white">Managed AI hosting</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4 border-b border-white/8 pb-4">
+                <dt class="text-white/55">Infrastructure</dt>
+                <dd class="text-right font-medium text-white">Dedicated customer servers</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4 border-b border-white/8 pb-4">
+                <dt class="text-white/55">Payments</dt>
+                <dd class="text-right font-medium text-white">Stripe</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4 border-b border-white/8 pb-4">
+                <dt class="text-white/55">Availability target</dt>
+                <dd class="text-right font-medium text-white">99.9%</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4">
+                <dt class="text-white/55">Legal contact</dt>
+                <dd class="text-right font-medium text-white"><a class="text-kana-coral hover:text-orange-300" href="mailto:support@kana.host">support@kana.host</a></dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="rounded-[1.75rem] border border-kana-coral/25 bg-kana-coral/10 p-6">
+            <p class="text-sm font-medium text-kana-coral">Service stack</p>
+            <ul class="mt-4 space-y-3 text-sm leading-7 text-white/80">
+              <li>• Hetzner in Germany</li>
+              <li>• Tailscale encrypted networking</li>
+              <li>• Cloudflare edge protection</li>
+              <li>• Stripe billing</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="terms" class="mt-8 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+      <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl lg:sticky lg:top-28 lg:h-fit">
+        <p class="text-xs uppercase tracking-[0.24em] text-white/45">Contents</p>
+        <ol class="mt-4 space-y-3 text-sm text-white/75">
+          <li><a href="#service" class="transition hover:text-kana-coral">1. Service description</a></li>
+          <li><a href="#accounts" class="transition hover:text-kana-coral">2. Accounts and eligibility</a></li>
+          <li><a href="#acceptable-use" class="transition hover:text-kana-coral">3. Acceptable use</a></li>
+          <li><a href="#payments" class="transition hover:text-kana-coral">4. Fees and payments</a></li>
+          <li><a href="#availability" class="transition hover:text-kana-coral">5. Availability and support</a></li>
+          <li><a href="#ownership" class="transition hover:text-kana-coral">6. Data ownership and license</a></li>
+          <li><a href="#third-party-services" class="transition hover:text-kana-coral">7. Third-party services</a></li>
+          <li><a href="#termination" class="transition hover:text-kana-coral">8. Suspension and termination</a></li>
+          <li><a href="#liability" class="transition hover:text-kana-coral">9. Disclaimers and liability limits</a></li>
+          <li><a href="#law" class="transition hover:text-kana-coral">10. Governing law and changes</a></li>
+        </ol>
+      </div>
+
+      <div class="space-y-4">
+        <details id="service" open class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 1</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Service description</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>KanaHost provides managed hosting and related operations for AI assistants. The service is designed so each customer receives a dedicated server environment rather than a shared customer runtime.</p>
+            <p>The service may include infrastructure provisioning, deployment, model connectivity, networking, monitoring, updates, and support. KanaHost may change, improve, or retire features from time to time.</p>
+            <p>The service is offered by ContextX Inc, a Delaware company, through the domains <span class="text-white">kanahost.com</span> and <span class="text-white">kana.host</span>.</p>
+          </div>
+        </details>
+
+        <details id="accounts" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 2</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Accounts and eligibility</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>You must provide accurate account information and keep it current. You are responsible for activity under your account and for keeping credentials secure.</p>
+            <p>If you use KanaHost on behalf of a company or organization, you represent that you have authority to bind that entity to these Terms.</p>
+            <p>You may not use the service if doing so would violate applicable law or sanctions requirements.</p>
+          </div>
+        </details>
+
+        <details id="acceptable-use" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 3</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Acceptable use</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>You agree not to use KanaHost to break the law, violate others' rights, or interfere with the security or operation of the platform.</p>
+            <p>Without limitation, you may not use the service to:</p>
+            <ul class="space-y-2 pl-5 text-white/75">
+              <li class="list-disc">Transmit malware, perform unauthorized access, or attempt to probe or breach systems.</li>
+              <li class="list-disc">Generate, store, or distribute illegal content or content that infringes intellectual property or privacy rights.</li>
+              <li class="list-disc">Abuse external providers, send spam, or use the platform for unlawful surveillance, harassment, or fraud.</li>
+              <li class="list-disc">Circumvent rate limits, billing controls, or access restrictions.</li>
+            </ul>
+            <p>We may investigate suspected misuse and take protective action, including suspension, if reasonably necessary.</p>
+          </div>
+        </details>
+
+        <details id="payments" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 4</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Fees and payments</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>Paid plans, billing cycles, and pricing are presented at the time of purchase or in your order flow. By subscribing, you authorize us and our payment processor, Stripe, to charge applicable fees and taxes.</p>
+            <p>Unless otherwise stated in writing, fees are billed in advance, are non-refundable, and may renew automatically until cancelled.</p>
+            <p>If a payment fails, we may retry, limit service features, or suspend the account until payment is resolved.</p>
+            <p>We may update pricing from time to time. If we do, the new pricing will apply prospectively, and we will provide notice where required.</p>
+          </div>
+        </details>
+
+        <details id="availability" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 5</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Availability and support</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>We design KanaHost for reliability and target <span class="text-white">99.9% availability</span>. This is a service goal, not a guarantee of uninterrupted or error-free operation unless we separately agree to a written SLA.</p>
+            <p>There may be downtime for maintenance, upgrades, emergency response, upstream provider problems, internet failures, misuse, or events outside our reasonable control.</p>
+            <p>We provide support through the channels we make available, including email at <a href="mailto:support@kana.host" class="text-kana-coral hover:text-orange-300">support@kana.host</a>. Support scope and response times may vary by plan.</p>
+          </div>
+        </details>
+
+        <details id="ownership" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 6</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Data ownership and license</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>You retain ownership of your content, data, prompts, files, integrations, and other materials you place into KanaHost.</p>
+            <p>You grant us a limited, non-exclusive right to host, process, transmit, back up, and otherwise use that data only as needed to provide, secure, maintain, and support the service.</p>
+            <p>We do not claim ownership of your data, and we do not use your private assistant content to train general-purpose KanaHost models.</p>
+            <p>You are responsible for having the rights and permissions necessary for the data you upload or connect.</p>
+          </div>
+        </details>
+
+        <details id="third-party-services" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 7</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Third-party services</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>KanaHost depends on third-party providers, including infrastructure, networking, identity, AI model, and payment providers such as Hetzner, Tailscale, Cloudflare, Clerk, Stripe, Anthropic, OpenAI, and Google.</p>
+            <p>Your use of connected third-party services may also be subject to those providers' own terms, privacy policies, rate limits, pricing, and availability constraints.</p>
+            <p>We are not responsible for outages, policy changes, or failures caused by third-party services outside our reasonable control.</p>
+          </div>
+        </details>
+
+        <details id="termination" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 8</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Suspension and termination</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>You may cancel the service at any time, subject to any billing commitments already incurred.</p>
+            <p>We may suspend or terminate access if you materially breach these Terms, fail to pay, create security risk, expose us or others to legal risk, or use the service in a way that could harm the platform or other customers.</p>
+            <p>On termination, your right to use the service ends. We may delete hosted environments and associated data according to our retention practices, unless law requires otherwise.</p>
+            <p>Where feasible, we may give notice and an opportunity to cure before termination, but we are not required to do so in urgent or high-risk situations.</p>
+          </div>
+        </details>
+
+        <details id="liability" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 9</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Disclaimers and liability limits</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>The service is provided on an <span class="text-white">"as is"</span> and <span class="text-white">"as available"</span> basis to the fullest extent permitted by law. We disclaim implied warranties, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+            <p>KanaHost provides hosting and managed operations, but you remain responsible for reviewing outputs, checking model behavior, and deciding how to use AI-generated content.</p>
+            <p>To the fullest extent permitted by law, ContextX Inc and its affiliates, officers, employees, and service providers will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost profits, lost data, loss of goodwill, or business interruption.</p>
+            <p>To the fullest extent permitted by law, our total liability arising out of or relating to the service or these Terms will not exceed the amount you paid KanaHost for the service in the <span class="text-white">12 months</span> before the event giving rise to the claim.</p>
+          </div>
+        </details>
+
+        <details id="law" class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+          <summary class="flex cursor-pointer items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Section 10</p>
+              <h2 class="mt-2 text-2xl font-semibold text-white">Governing law and changes</h2>
+            </div>
+            <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
+          </summary>
+          <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
+            <p>These Terms are governed by the laws of the State of Delaware, without regard to conflict-of-laws rules.</p>
+            <p>Any dispute arising from these Terms or the service will be resolved in the courts located in Delaware, and each party consents to that venue and jurisdiction, unless applicable law requires otherwise.</p>
+            <p>We may update these Terms from time to time. The updated version will become effective when posted unless a later date is stated. Continued use of the service after the effective date means you accept the revised Terms.</p>
+            <p>Questions about these Terms can be sent to <a href="mailto:support@kana.host" class="text-kana-coral hover:text-orange-300">support@kana.host</a>.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="mt-8 rounded-[2rem] border border-white/10 bg-gradient-to-r from-kana-coral/18 via-white/5 to-white/5 p-8 md:p-10">
+      <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.24em] text-kana-coral">Questions about your plan?</p>
+          <h2 class="mt-2 text-3xl font-semibold text-white">Need billing or legal help?</h2>
+          <p class="mt-3 max-w-2xl text-sm leading-7 text-white/70 md:text-base">Contact us for billing support, service questions, or clarification about these Terms.</p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="mailto:support@kana.host" class="rounded-full bg-kana-coral px-5 py-3 text-sm font-medium text-white transition hover:opacity-90">support@kana.host</a>
+          <a href="./privacy.html" class="rounded-full border border-white/15 px-5 py-3 text-sm font-medium text-white/80 transition hover:border-white/30 hover:text-white">View Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 px-6 py-8 text-center text-sm text-white/45">
+    <p>© 2026 ContextX Inc · KanaHost · <a href="https://kanahost.com" class="text-white/60 hover:text-white">kanahost.com</a></p>
+  </footer>
+</body>
+</html>
