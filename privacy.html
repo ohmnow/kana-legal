@@ -47,6 +47,44 @@
     details > summary::-webkit-details-marker {
       display: none;
     }
+
+    .info-tip {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      vertical-align: middle;
+      cursor: help;
+    }
+    .info-tip__icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      line-height: 1;
+    }
+    .info-tip__content {
+      position: absolute;
+      left: 50%;
+      bottom: calc(100% + 10px);
+      transform: translateX(-50%);
+      width: min(280px, 70vw);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 0.9rem;
+      background: rgba(12,12,12,0.95);
+      padding: 0.75rem 0.9rem;
+      color: rgba(255,255,255,0.92);
+      font-size: 0.78rem;
+      line-height: 1.45;
+      box-shadow: 0 18px 48px rgba(0,0,0,0.35);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      z-index: 20;
+    }
+    .info-tip:hover .info-tip__content,
+    .info-tip:focus-within .info-tip__content {
+      opacity: 1;
+    }
   </style>
 </head>
 <body class="text-white antialiased selection:bg-kana-coral/30 selection:text-white">
@@ -55,7 +93,7 @@
   <header class="sticky top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur-xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
       <a href="./index.html" class="flex items-center gap-3">
-        <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-kana-coral text-lg font-semibold text-white shadow-glow">K</div>
+        <span style="font-weight:800;font-size:30px;letter-spacing:-0.5px;color:white;">KANA</span>
         <div>
           <div class="text-sm uppercase tracking-[0.32em] text-white/50">KanaHost</div>
           <div class="text-xs text-white/70">Privacy Policy</div>
@@ -78,7 +116,7 @@
           </div>
           <h1 class="max-w-3xl text-4xl font-semibold tracking-tight text-white md:text-6xl">Privacy Policy</h1>
           <p class="mt-5 max-w-2xl text-base leading-8 text-white/70 md:text-lg">
-            KanaHost is a managed AI assistant hosting platform operated by <span class="font-medium text-white">ContextX Inc</span>, a Delaware company. This page explains what data we handle, what we do <span class="font-medium text-kana-coral">not</span> do, and how we keep your AI assistant private on your own dedicated infrastructure.
+            KanaHost is a managed AI assistant hosting platform operated by <span class="font-medium text-white">ContextX Inc</span>. This page explains what data we handle, what we do <span class="font-medium text-kana-coral">not</span> do, and how we keep your AI assistant private on your own dedicated infrastructure.
           </p>
 
           <div class="mt-8 rounded-[1.75rem] border border-white/10 bg-black/35 p-5 md:p-7" aria-labelledby="bluf-title">
@@ -92,7 +130,7 @@
             <ul class="space-y-3 text-sm leading-7 text-white/80 md:text-base">
               <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>Your assistant runs on a dedicated server for your account, not on a shared customer machine.</span></li>
               <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>We do <strong class="text-white">not</strong> train AI models on your data, and we do not routinely read your conversations.</span></li>
-              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>Your infrastructure is hosted primarily at Hetzner in Germany, with traffic protected by Tailscale and Cloudflare.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>Your infrastructure is hosted primarily in the <span class="inline-flex items-center gap-1">European Union <span class="info-tip" tabindex="0" aria-label="More info about EU hosting"><span class="info-tip__icon">ℹ️</span><span class="info-tip__content">Your data is hosted in the EU, which has some of the strongest data protection laws in the world under GDPR.</span></span></span>, with traffic protected by Tailscale and Cloudflare.</span></li>
               <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>If you choose to use outside AI models, requests may go to Anthropic, OpenAI, or Google so your assistant can answer you.</span></li>
               <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>We only use essential cookies for sign-in through Clerk. We do not run ad trackers.</span></li>
               <li class="flex gap-3"><span class="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-kana-coral"></span><span>You can ask for a copy of your data, ask us to delete it, and use GDPR rights where they apply.</span></li>
@@ -110,11 +148,11 @@
               </div>
               <div class="flex items-start justify-between gap-4 border-b border-white/8 pb-4">
                 <dt class="text-white/55">Jurisdiction</dt>
-                <dd class="text-right font-medium text-white">Delaware, USA</dd>
+                <dd class="text-right font-medium text-white">United States</dd>
               </div>
               <div class="flex items-start justify-between gap-4 border-b border-white/8 pb-4">
                 <dt class="text-white/55">Hosting region</dt>
-                <dd class="text-right font-medium text-white">Hetzner, Germany (EU)</dd>
+                <dd class="text-right font-medium text-white"><span class="inline-flex items-center gap-1">European Union <span class="info-tip" tabindex="0" aria-label="More info about EU hosting"><span class="info-tip__icon">ℹ️</span><span class="info-tip__content">Your data is hosted in the EU, which has some of the strongest data protection laws in the world under GDPR.</span></span></span></dd>
               </div>
               <div class="flex items-start justify-between gap-4 border-b border-white/8 pb-4">
                 <dt class="text-white/55">Network security</dt>
@@ -156,7 +194,12 @@
         </ol>
       </div>
 
-      <div class="space-y-4">
+
+      <div class="flex justify-end">
+        <button id="accordion-toggle" type="button" class="rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-white/75 transition hover:border-white/20 hover:text-white">Expand All</button>
+      </div>
+
+      <div class="space-y-4" data-accordion-group>
         <details id="collect" open class="group rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
           <summary class="flex cursor-pointer items-start justify-between gap-4">
             <div>
@@ -229,7 +272,7 @@
             <span class="mt-1 rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 transition group-open:rotate-45 group-open:text-white">＋</span>
           </summary>
           <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
-            <p>Customer infrastructure is primarily hosted on Hetzner servers located in Germany. We selected this environment to support strong operational control and European hosting options.</p>
+            <p>Customer infrastructure is primarily hosted in the <span class="inline-flex items-center gap-1">European Union <span class="info-tip" tabindex="0" aria-label="More info about EU hosting"><span class="info-tip__icon">ℹ️</span><span class="info-tip__content">Your data is hosted in the EU, which has some of the strongest data protection laws in the world under GDPR.</span></span></span>. We selected this environment to support strong operational control and European hosting options.</p>
             <p>Your assistant runs on a dedicated server environment assigned to your account. Data is intended to stay within that environment except when it must be transmitted to a service you choose to connect, such as an AI provider, email provider, calendar provider, or identity provider.</p>
             <p>We use multiple layers of protection, including:</p>
             <ul class="space-y-2 pl-5 text-white/75">
@@ -253,7 +296,7 @@
           <div class="mt-5 space-y-4 text-sm leading-8 text-white/75 md:text-base">
             <p>We use a limited set of third-party providers to operate KanaHost. Depending on your setup, your data may be processed by:</p>
             <ul class="space-y-2 pl-5 text-white/75">
-              <li class="list-disc"><strong class="text-white">Hetzner</strong> for core server infrastructure in Germany.</li>
+              <li class="list-disc"><strong class="text-white">our EU-based infrastructure provider</strong> for core server infrastructure in the <span class="inline-flex items-center gap-1">European Union <span class="info-tip" tabindex="0" aria-label="More info about EU hosting"><span class="info-tip__icon">ℹ️</span><span class="info-tip__content">Your data is hosted in the EU, which has some of the strongest data protection laws in the world under GDPR.</span></span></span>.</li>
               <li class="list-disc"><strong class="text-white">Tailscale</strong> for encrypted private networking.</li>
               <li class="list-disc"><strong class="text-white">Cloudflare</strong> for DNS, edge security, and traffic routing.</li>
               <li class="list-disc"><strong class="text-white">Clerk</strong> for authentication and session management.</li>
@@ -327,7 +370,7 @@
             <p>We may update this Privacy Policy from time to time to reflect product, operational, legal, or regulatory changes. When we do, we will post the updated version on this page and update the "Last updated" date.</p>
             <p>If a change is material, we may also provide notice through the service or by email.</p>
             <p>Questions, requests, or privacy concerns can be sent to <a href="mailto:support@kana.host" class="text-kana-coral hover:text-orange-300">support@kana.host</a>.</p>
-            <p>Mailing entity: <span class="text-white">ContextX Inc, Delaware, USA.</span></p>
+            <p>Mailing address: <span class="text-white">ContextX Inc, 548 Market Street, San Francisco, CA 94104</span></p>
           </div>
         </details>
       </div>
@@ -351,5 +394,54 @@
   <footer class="border-t border-white/10 px-6 py-8 text-center text-sm text-white/45">
     <p>© 2026 ContextX Inc · KanaHost · <a href="https://kana.host" class="text-white/60 hover:text-white">kana.host</a></p>
   </footer>
+
+  <script>
+    (() => {
+      const accordionRoot = document.querySelector('[data-accordion-group]');
+      if (!accordionRoot) return;
+
+      const sections = Array.from(accordionRoot.querySelectorAll('details'));
+      const toggleButton = document.getElementById('accordion-toggle');
+      if (!sections.length || !toggleButton) return;
+
+      let suppressSync = false;
+
+      const updateToggleLabel = () => {
+        const allOpen = sections.every((section) => section.open);
+        toggleButton.textContent = allOpen ? 'Collapse All' : 'Expand All';
+      };
+
+      sections.forEach((section) => {
+        section.addEventListener('toggle', () => {
+          if (suppressSync) {
+            updateToggleLabel();
+            return;
+          }
+
+          if (section.open) {
+            suppressSync = true;
+            sections.forEach((other) => {
+              if (other !== section) other.open = false;
+            });
+            suppressSync = false;
+          }
+
+          updateToggleLabel();
+        });
+      });
+
+      toggleButton.addEventListener('click', () => {
+        const shouldExpandAll = sections.some((section) => !section.open);
+        suppressSync = true;
+        sections.forEach((section) => {
+          section.open = shouldExpandAll;
+        });
+        suppressSync = false;
+        updateToggleLabel();
+      });
+
+      updateToggleLabel();
+    })();
+  </script>
 </body>
 </html>
